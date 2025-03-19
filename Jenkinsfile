@@ -3,7 +3,6 @@ pipeline {
     environment {
         STAGING_SERVER = 'staging.example.com'
         PROD_SERVER = 'prod.example.com'
-        EMAIL = 'jasmeen4873.be23@chitkara.edu.in'
     }
     stages {
         stage('Build') {
@@ -53,10 +52,9 @@ pipeline {
     }
     post {
         always {
-            emailext (
+            mail (to: "jasmeen4783.be23@chitkara.edu.in",
                 subject: "Jenkins Pipeline Execution",
-                body: "Pipeline execution complete. Check Jenkins for details.",
-                to: "$EMAIL"
+                body: "Pipeline execution complete. Check Jenkins for details."
             )
         }
     }
