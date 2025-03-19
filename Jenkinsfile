@@ -15,6 +15,7 @@ pipeline {
         stage('Unit and Integration Tests') {
             steps {
                 echo 'Running unit tests...'
+                echo "hello"
                 
             }
         }
