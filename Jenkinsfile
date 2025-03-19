@@ -14,7 +14,7 @@ pipeline {
         stage('Unit and Integration Tests') {
             steps {
                 echo 'Running unit and integration tests...'
-                //bat 'npm test'  // Runs your test scripts
+                
             }
             post {
                 always {
