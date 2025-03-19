@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                sh 'npm install'
+                echo "Could Use NPM or MVN"
             }
         }
         stage('Unit and Integration Tests') {
